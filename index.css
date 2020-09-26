@@ -1,0 +1,106 @@
+body{
+    margin: 0px;
+}
+
+.parent {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 8fr repeat(4, 1fr) 8fr;
+    grid-template-rows: 3fr 2fr repeat(4, 1fr) repeat(2, 2fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.div0 {
+    grid-area: 2 / 2 / span 1 / span 4;
+    border: 3px solid;
+}
+
+.parent > div {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.div1 {
+    grid-area: 3 / 2 / span 1 / span 1;
+    background-color: rgb(127,127, 127);
+}
+
+
+.div2 {
+    grid-area: 3 / 3 / span 1 / span 1;
+    background-color: rgb(127,127, 127);
+  }
+
+.div3 {
+    grid-area: 3 / 4 / span 1 / span 1;
+    background-color: rgb(127,127, 127);
+}
+
+.div4 {
+    grid-area: 4 / 2 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+
+}
+.div5 {
+    grid-area: 4 / 3 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+}
+.div6 {
+    grid-area: 4 / 4 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+  
+}
+.div7 {
+    grid-area: 5 / 2 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+   
+}
+.div8 {
+    grid-area: 5 / 3 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+}
+.div9 {
+    grid-area: 5 / 4 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+}
+.div10 {
+    grid-area: 6 / 2 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+}
+
+.div-multi {
+    grid-area: 4 / 5 / span 1 / span 1;
+    background-color:orange;
+}
+.div-div {
+    grid-area: 3 / 5 / span 1 / span 1;
+    background-color: orange;
+}
+.div-plus {
+    grid-area: 5 / 5 / span 1 / span 1;
+    background-color: orange;
+}
+.div-min {
+    grid-area: 6 / 4 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+    
+}
+.div-eq {
+    grid-area: 6 / 5 / span 1 / span 1;
+    background-color: orange;
+}
+.div-del {
+    grid-area: 6 / 3 / span 1 / span 1;
+    background-color: rgb(70,70, 70);
+    font-size: 30px;
+}
+
